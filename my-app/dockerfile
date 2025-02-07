@@ -20,4 +20,4 @@ COPY --from=builder /app .
 
 EXPOSE 5173
 
-CMD [ "node","dist/index.js" ]
+CMD [ "npm", "run", "dev", "--", "--host" ]
